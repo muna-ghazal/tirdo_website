@@ -1,0 +1,38 @@
+header .top-middle{
+    min-height: 80px;
+    max-height: 500px;
+}
+
+header .top-middle .emblem {
+    width: 80px;
+}
+
+header .top-middle .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .top-middle .client-logo {
+    width: 70px;
+    height: 80px;
+}
+/* .mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+} */
+
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container {
+    text-align: center; /* To center the image within the container */
+  }
+  
+  .title-container {
+    margin-top: 10px; /* To add some space between the image and the title */
+  }
+  

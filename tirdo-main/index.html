@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#2d4a84">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2d4a84">
+
+    <title> TIRDO | Home
+    </title>
+
+    <!-- favicons -->
+    <link rel="icon" href="site/images/pngegg.png" type="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+
+    <!-- Stylesheet  -->
+    <link rel="stylesheet" href="site/css/master.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container max-1920 px-0">
+
+        <!-- HEADER -->
+        <header class="col-12 px-0" style="background-image: url('site/images/flag.png');">
+
+            <!-- top navbar -->
+            <div class="col-12 bg-white">
+                <div class="container-fluid px-0">
+                    <div class="row top_nav px-0">
+                        <div class="col-5 sm-hide pl-0 pl-xs-2">
+                            <ul class="list-inline mx-auto float-left">
+                                <li class="list-inline-item sm-hide pr-2">
+                                    <div class="search-form">
+                                        <form class="form-inline py-0 mr-auto" action=""
+                                            method="get">
+                                            <input class="form-control mr-sm-2" type="text" name="search"
+                                                placeholder="Search" aria-label="Search">
+                                            <button type="submit" class="search-icon" name="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcFJREFUSEu11curTmEUx/HPiQzkUpTLREgYuEXJAIUilKlLMSBFYUAZ+APIhIQwoJCUP+B0RgohE6RElBIZkEvkfm3VOnq9zt7vM9jvGu5n7fV91uW3nh5dtp4ux1cHmID1WIXZeZE76MVFPC+53ECAETiPNTUBfuMSNuNTHagdMBS3MANfcQpH8CSDTMZubMWQ9F2E71WQdsA5bMQzrMCDih9noQ/jcQh7SgAzcQ8/MB9R7zpbjCv4hkl4MZBzawZHsQPHsLOkgbiADdiHA50AjzEl63+/ELAEl3ENkdF/1prBR0STB+FXIWAUXuMNRncCvMdwDEPASix8P+AVxnQC3E1BzcPtkuhYgJtZpmWdAAexFyexvRBwFpsQA7KrE2AqHuJn4ZiGwK5m0Mqs24V2OuX/FMvxqCKTOSm0san2bSVCC5/WVfEFJ3A4lR3nkWWsii0YnEGjB6H6aHbtmPYfjkwBra7pwzvsxzrMTdUvRXz/x+rW9cRU6UrE7vmc03UDx/EWoYMQWqzzmMKYpNDEX2viwQnIdUxHbIOFeNlPaAIQsUJkMVHTsj9nmgZEvHFYm+9HoyWq1WRTJaqEdB3wBzsRVhkyGVX0AAAAAElFTkSuQmCC"/></button>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item sm-hide pr-2">
+                                    <div class="footer-media">
+                                        <a href="https://www.facebook.com/tirdotz" target="_blank"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjVJREFUSEvdlU1IFHEYxn/vjLFGkZc6CEYW2miURARB4e5CIRRBH6QUQoc6RImwG1EURXvPnC0wuoQIXrp4CAIJwd0VL1LQF7a7QZIRRRJhIZS688YUbrkfoyt48X+c932f3zzvzDwjLPORZdZnhQEami6tefmkY8prbTV72teVlZs3FTkMbAZmgK5Kqbj2wfleucrQI8mY3QWoq/NvRc3NpvWl6rUoLcmE/aoYxPKHBxD2F6iPAxtV5VQ60flwrp4F1AVD1aoyBkxg6LHUYHQ4V6S+MbTLMeSZh8OnKsQV7X0biz6f56A6GCn36eQPoOyPgPDAyOiNN0PRT3OClj/UikivB2BKlLZkwu7Jc+BesAJh96735ggMieijjKMjhpg7Qe94ALpTcfvM//XsirYFL6x1ZLWljtMPrF/i93ErFbcvFwTUBNurTC17D3wFNiwFoNCWjtv3CgIgYliByXfApqWIuzMqRn06djtZBAB1/tBxFXFfsb8PurQzlorbW3JH8qLC8odbEK4DO0rSF86nYvb9BQFb/RcPiejjksRh3JyoqB0djUwvCHAb6gKhHkVOLxIyqw770kP2SKH+ImkaMazGb9vFMK4qnPQAuXlzNhW3u4v15AHcwJueyexWhyvAQQ/xn6LamkxE+7ycZgG1wfABQ+kAGuaFYOHpfnM2c250+K4bcJ5nngM3ik2feQKRo0AT4AN+AZ+BjwIDjiF96cHOFwsJz9VX2B9tsbZL6Vv2Ff0GpDGuGbbFsMYAAAAASUVORK5CYII=" /></a>
+                                        
+                                        <a href="https://www.instagram.com/tirdo_official" target="_blank"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAodJREFUSEvFlT1oFEEUx/9v9+4kREQJIljYGG/VGD+4WMa9CJZKiigIsbGwSIg6CYqFSMRCMHC70VjZRoxFkFiJhcncIYg2MUjM5KMICIJpDIkgd3vzZNU79jZ7kkOOTLfzPn77f+/NDKHOi+qcH1sDaD59Y79Z9PoBtAM4AlT9EQbwCUDO4KL7OftwIVyRDQqStughwAUQr7F8BQb1zsvMk2BcBeBgx0CKtX4PwKgxecndY4Pa5iczH0sbFQDL7n8BcGcNyb95BbPVjHnniWjkdxxjXGWdrioAsQxgXwTgCwP3DeJZkNEEzRYDtwBaVjLTaqVFGxgf/sTxkpJuczXAOoDGEOA1vHiXevtgrbm9b7dvW8w9WjncIVqKGq8A/GBgJwF7/satKensiAAMGpa9WgwlXynEEwcS+UILE7oJbGuACZAEHtVkmsQ6F4rxlHTKA1LuQSp1Jb6+vTEfch5S0rlp2eIxgJ6K6WCMzGWdPssWLwGcDdiKSjqxDQrS6cHYV14thACXY3lMeAmWAPnnIbB4Rkn3WNIWdwi4GzBoJR0zqgdk2UJXpAB643mMeQlMAjgagk8r6Zyw0uI2GPeCNiWdcmVCYyr8kxlco0o6lyxbDAO4WimAXZV1hWVfnwDoXMAW3QPfwbI3ADQxjmtGAxFdBPEp389vsoZ+Bopti2jyTyWdhlrGdFkTdy5MudNBBUlbtBN4DKC9IdXflXR2RQKStlggoHxIgo0DeJzImNWam0BsEehMKHHpc05J51A1Bc8BXKgSuLltoqdqKtNdRcG1kwTj3f9cdtA6pXLDM5EAf7Ou13WJGnpwWv9Rm/KDUzRjmcU3Q0th3615MjfXzc151V3BL7dV9RkzbUS1AAAAAElFTkSuQmCC" /></a>
+                                                                              
+                                        <a href="https://www.twitter.com/tirdo_official" target="_blank"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjVJREFUSEvdlU1IFHEYxn/vjLFGkZc6CEYW2miURARB4e5CIRRBH6QUQoc6RImwG1EURXvPnC0wuoQIXrp4CAIJwd0VL1LQF7a7QZIRRRJhIZS688YUbrkfoyt48X+c932f3zzvzDwjLPORZdZnhQEami6tefmkY8prbTV72teVlZs3FTkMbAZmgK5Kqbj2wfleucrQI8mY3QWoq/NvRc3NpvWl6rUoLcmE/aoYxPKHBxD2F6iPAxtV5VQ60flwrp4F1AVD1aoyBkxg6LHUYHQ4V6S+MbTLMeSZh8OnKsQV7X0biz6f56A6GCn36eQPoOyPgPDAyOiNN0PRT3OClj/UikivB2BKlLZkwu7Jc+BesAJh96735ggMieijjKMjhpg7Qe94ALpTcfvM//XsirYFL6x1ZLWljtMPrF/i93ErFbcvFwTUBNurTC17D3wFNiwFoNCWjtv3CgIgYliByXfApqWIuzMqRn06djtZBAB1/tBxFXFfsb8PurQzlorbW3JH8qLC8odbEK4DO0rSF86nYvb9BQFb/RcPiejjksRh3JyoqB0djUwvCHAb6gKhHkVOLxIyqw770kP2SKH+ImkaMazGb9vFMK4qnPQAuXlzNhW3u4v15AHcwJueyexWhyvAQQ/xn6LamkxE+7ycZgG1wfABQ+kAGuaFYOHpfnM2c250+K4bcJ5nngM3ik2feQKRo0AT4AN+AZ+BjwIDjiF96cHOFwsJz9VX2B9tsbZL6Vv2Ff0GpDGuGbbFsMYAAAAASUVORK5CYII=" /></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-7 sm-hide px-0">
+                            <ul class="list-inline mx-auto justify-content-end">
+                                <li class="list-inline-item">
+                                    <a title="Switch Language to English" href="#">
+                                        <object data="site/images/Flag_of_the_United_Kingdom.svg"
+                                            type="image/svg+xml" width="20px"></object>
+                                        English
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a title="Switch Language to swahili" href="../sw/index.html">
+                                        <object data="site/images/Flag_of_Tanzania.svg"
+                                            type="image/svg+xml" width="18px"></object>
+                                        Kiswahili
+                                    </a>
+                                </li>
+                                <li class='nav-item'><a class='nav-link' target='_black'
+                                        href=''>Staff Mail</a></li>
+                                </li>
+                                <li class='nav-item'><a class='nav-link' target='_black'
+                                        href=''>e-Office</a></li>
+                                </li>
+                                <li class='nav-item'><a class='nav-link' href=''>FAQs</a></li>
+                                </li>
+                                <li class='nav-item'><a class='nav-link' href='#'>msaada@tirdo.or.tz</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top navbar -->
+
+            <!-- top middle -->
+            <div class="col-md-12 mt-0 top-middle">
+                <div class="container-fluid px-0">
+                    <div class="row ">     
+                        <div class="col-md-2 col-sm-2 col-xs-2 float-left text-left pt-1 logo-container">
+                            <a href="#"><img src="https://www.ega.go.tz/site/images/emblem.png" alt="emblem"
+                                    class="mx-auto img-fluid emblem"></a>
+                        </div>
+            
+                        <div class="col-md-8 col-sm-8 col-xs-8 text-center pt-3 pt-xs-0">
+                            <h2 class="mb-0 title title-main">TANZANIA INDUSTRIAL RESEARCH AND DEVELOPMENT ORGANIZATION</h2>
+                            <h6 class="title-desc pt-2"><b><i>TIRDO kwa maendeleo endelevu ya viwanda</i></b></h6>
+                        </div>
+            
+                        <div class="col-md-2 col-sm-2 col-xs-2 text-right pt-1 pr-0 logo-container"><img
+                                src="site/images/logo.jpg" alt="TIRDO Logo" class="img-fluid client-logo"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- /top middle -->
+
+            <!-- top bottom -->
+            <div class="col-12 px-0">
+                <div class="col-md-12 col-xs-12 px-0 top-fixed top-bottom">
+            
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#middleNavbarMenu"
+                            aria-controls="middleNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class="collapse navbar-collapse col-12 px-0" id="middleNavbarMenu">
+                            <ul class="navbar-nav mr-auto nav-bottom-header justify-content-center d-flex col-12">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">
+                                        <span class="mt-0 pt-0">Home</span>
+                                    </a>
+                                </li>
+            
+                                <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
+                                        data-toggle='dropdown'>About Us</a>
+                                    <ul class='dropdown-menu'>
+                                        <li><a class='dropdown-item' href='mission-vision.html'>Mission and Vision</a></li>
+                                        <li><a class='dropdown-item'href='Administration.html'>Administration</a></li>
+                                        <li><a class='dropdown-item' href='organization-structure.html.html'>Organization
+                                                Structure</a>
+                                        </li>
+                                        <li><a class='dropdown-item' href='#'>Board of Directors</a>
+                                        </li>
+                                        <li><a class='dropdown-item' href='success-story.html'>Success story</a>
+                                        </li>
+            
+                                    </ul>
+                                </li>
+                                <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
+                                        data-toggle='dropdown'>Departments</a>
+                                    <ul class='dropdown-menu'>
+                                        <li class='nav-item dropdown-submenu'>
+                                            <a class='dropdown-item dropdown-toggle' data-toggle='dropdown'
+                                                href='industrial_chemistry.html'>Industry and Research </a>
+                                            <ul class='dropdown-menu'>
+                                                <li><a class='dropdown-item' href='environment.html'>Environment</a></li>
+                                                <li><a class='dropdown-item' href='food_biotechnology.html'>Food and
+                                                        Biotechnology</a></li>
+                                                <li><a class='dropdown-item' href='industrial_chemistry.html'>Industrial
+                                                        Chemistry</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class='nav-item dropdown-submenu'>
+                                            <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>Engineering
+                                                Development</a>
+                                            <ul class='dropdown-menu'>
+                                                <li><a class='dropdown-item' href='energy.html'>Energy</a></li>
+                                                <li><a class='dropdown-item' href='material_science_tech.html'>Material Science &
+                                                        Technology</a></li>
+                                                <li><a class='dropdown-item' href='textile_lather_chemistry.html'>Textile & Leather
+                                                        Chemistry</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class='nav-item dropdown-submenu'>
+                                            <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>ICT & Technolog
+                                                Development</a>
+                                            <ul class='dropdown-menu'>
+                                                <li><a class='dropdown-item' href='ict.html'>ICT</a></li>
+                                                <li><a class='dropdown-item' href=''>Instrumentation</a></li>
+                                                <li><a class='dropdown-item' href=''>Technology Transfer</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
+                                        data-toggle='dropdown'>COMSATS Center</a>
+                                    <ul class='dropdown-menu'>
+                                        <li><a class='dropdown-item' href='background.html'>Background</a></li>
+                                        <li><a class='dropdown-item' href='centre_objectivies.html'>Center Objectives</a></li>
+                                        <li><a class='dropdown-item' href='centre_activities.html'>Center Activities</a></li>
+                                    </ul>
+                                </li>
+                                <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
+                                        data-toggle='dropdown'>Services</a>
+                                    <ul class='dropdown-menu'>
+                                        <li><a class='dropdown-item' href='research.html'>Research</a></li>
+                                        <li><a class='dropdown-item' href='consultacy_and_support.html'>Consultancy & Technical
+                                                Services</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
+                                    data-toggle='dropdown'>T-Hub</a>
+                                <ul class='dropdown-menu'>
+                                    <li><a class='dropdown-item' href='about_T-hub.html'>About T-Hub</a></li>
+                                    <li><a class='dropdown-item' href='T-hub_services.html'>T-Hub Services</a></li>
+                                    <li><a class='dropdown-item' href='Why_T-hub.html'>Why T-Hub</a></li>
+                                </ul>
+                            </li>
+
+                            <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
+                                data-toggle='dropdown'>Industrial Information Center</a>
+                            <ul class='dropdown-menu'>
+                                <li><a class='dropdown-item' href='research.html'>Background</a></li>
+                                <li><a class='dropdown-item' href='consultacy_and_support.html'>Core Objectives</a></li>
+                                <li><a class='dropdown-item' href='consultacy_and_support.html'>Center Activities</a></li> 
+                            </ul>
+                        </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top bottom -->
+            <!-- </div> -->
+        </header>
+        <!-- /HEADER -->
+
+        <!-- contents -->
+
+        <div class="home-page ">
+
+            <div class="col-md-12 px-0 slider">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="10000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item  active  ">
+                            <img class="d-block w-100" alt="Ministry of Investment, Industry and Trade"
+                                src="uploads/gallery/OKOA3.jpg">
+
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12 order-md-1 order-2 text-center">
+                                            <p class="text-primary "></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wave-svg max-1920 container sm-hide">
+                                    <svg width="2000" height="128" x="2000" y="128" viewBox="0 0 2000 128"
+                                        enable-background="new 0 0 2000 128" xml:space="preserve">
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M1999.5,22.2c-346-0.6-524.6-4.7-878.8,4.4c-286.6,7.4-442.3,54-608.1,51.2C307.3,74.3,202.5,5-0.5,28.1v100.4l2000-0.5V22.2z">
+                                        </path>
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M-0.3,46.1C251,15.3,440.9,84.7,499.6,98.4c54.7,12.8,122.5,12,186.7-5.3c154.2-41.6,315.5-70.9,475.2-67.5s324.6,22.4,484.3,19.7c133-2.3,302.8,1.7,352.8,3.7c0,21.3,0,80,0,80H-0.5L-0.3,46.1z">
+                                        </path>
+                                        <path opacity="0.4" fill="#f7f7f7"
+                                            d="M2000,41.2c-139.8-12.7-219.9-10.8-360.2-11.2c-285.5-0.8-487.5,18-736.2,51.1C647,115.4,546.7,116.4,199.2,53.6C140.3,43,59.5,45.6-0.5,52.3V130h2000L2000,41.2z">
+                                        </path>
+                                        <path fill="#EDEEF0"
+                                            d="M1634.6,50.1c-193.8,11.9-366.9,24.9-569,50c-110.2,13.7-221.2,21.5-332.3,19.6c-187-3.3-344.5-29.7-560.9-69.8c-122.2-22.6-172.8-4-172.8-4V130h1998V46C1997.5,46,1831,38.1,1634.6,50.1z">
+                                        </path>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block w-100" alt="Ministry of Investment, Industry and Trade"
+                                src="uploads/gallery/collab.jpg">
+
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12 order-md-1 order-2 text-center">
+                                            <p class="text-primary ">""</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wave-svg max-1920 container sm-hide">
+                                    <svg width="2000" height="128" x="2000" y="128" viewBox="0 0 2000 128"
+                                        enable-background="new 0 0 2000 128" xml:space="preserve">
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M1999.5,22.2c-346-0.6-524.6-4.7-878.8,4.4c-286.6,7.4-442.3,54-608.1,51.2C307.3,74.3,202.5,5-0.5,28.1v100.4l2000-0.5V22.2z">
+                                        </path>
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M-0.3,46.1C251,15.3,440.9,84.7,499.6,98.4c54.7,12.8,122.5,12,186.7-5.3c154.2-41.6,315.5-70.9,475.2-67.5s324.6,22.4,484.3,19.7c133-2.3,302.8,1.7,352.8,3.7c0,21.3,0,80,0,80H-0.5L-0.3,46.1z">
+                                        </path>
+                                        <path opacity="0.4" fill="#f7f7f7"
+                                            d="M2000,41.2c-139.8-12.7-219.9-10.8-360.2-11.2c-285.5-0.8-487.5,18-736.2,51.1C647,115.4,546.7,116.4,199.2,53.6C140.3,43,59.5,45.6-0.5,52.3V130h2000L2000,41.2z">
+                                        </path>
+                                        <path fill="#EDEEF0"
+                                            d="M1634.6,50.1c-193.8,11.9-366.9,24.9-569,50c-110.2,13.7-221.2,21.5-332.3,19.6c-187-3.3-344.5-29.7-560.9-69.8c-122.2-22.6-172.8-4-172.8-4V130h1998V46C1997.5,46,1831,38.1,1634.6,50.1z">
+                                        </path>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block w-100" alt="Ministry of Investment, Industry and Trade" src="uploads/gallery/collab2.jpg">
+                        
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12 order-md-1 order-2 text-center">
+                                            <p class="text-primary ">""</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="wave-svg max-1920 container sm-hide">
+                                    <svg width="2000" height="128" x="2000" y="128" viewBox="0 0 2000 128" enable-background="new 0 0 2000 128"
+                                        xml:space="preserve">
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M1999.5,22.2c-346-0.6-524.6-4.7-878.8,4.4c-286.6,7.4-442.3,54-608.1,51.2C307.3,74.3,202.5,5-0.5,28.1v100.4l2000-0.5V22.2z">
+                                        </path>
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M-0.3,46.1C251,15.3,440.9,84.7,499.6,98.4c54.7,12.8,122.5,12,186.7-5.3c154.2-41.6,315.5-70.9,475.2-67.5s324.6,22.4,484.3,19.7c133-2.3,302.8,1.7,352.8,3.7c0,21.3,0,80,0,80H-0.5L-0.3,46.1z">
+                                        </path>
+                                        <path opacity="0.4" fill="#f7f7f7"
+                                            d="M2000,41.2c-139.8-12.7-219.9-10.8-360.2-11.2c-285.5-0.8-487.5,18-736.2,51.1C647,115.4,546.7,116.4,199.2,53.6C140.3,43,59.5,45.6-0.5,52.3V130h2000L2000,41.2z">
+                                        </path>
+                                        <path fill="#EDEEF0"
+                                            d="M1634.6,50.1c-193.8,11.9-366.9,24.9-569,50c-110.2,13.7-221.2,21.5-332.3,19.6c-187-3.3-344.5-29.7-560.9-69.8c-122.2-22.6-172.8-4-172.8-4V130h1998V46C1997.5,46,1831,38.1,1634.6,50.1z">
+                                        </path>
+                                    </svg>
+                                </div>
+                        
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block w-100" alt="Ministry of Investment, Industry and Trade" src="uploads/gallery/collab3.jpeg">
+                        
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12 order-md-1 order-2 text-center">
+                                            <p class="text-primary ">""</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="wave-svg max-1920 container sm-hide">
+                                    <svg width="2000" height="128" x="2000" y="128" viewBox="0 0 2000 128" enable-background="new 0 0 2000 128"
+                                        xml:space="preserve">
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M1999.5,22.2c-346-0.6-524.6-4.7-878.8,4.4c-286.6,7.4-442.3,54-608.1,51.2C307.3,74.3,202.5,5-0.5,28.1v100.4l2000-0.5V22.2z">
+                                        </path>
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M-0.3,46.1C251,15.3,440.9,84.7,499.6,98.4c54.7,12.8,122.5,12,186.7-5.3c154.2-41.6,315.5-70.9,475.2-67.5s324.6,22.4,484.3,19.7c133-2.3,302.8,1.7,352.8,3.7c0,21.3,0,80,0,80H-0.5L-0.3,46.1z">
+                                        </path>
+                                        <path opacity="0.4" fill="#f7f7f7"
+                                            d="M2000,41.2c-139.8-12.7-219.9-10.8-360.2-11.2c-285.5-0.8-487.5,18-736.2,51.1C647,115.4,546.7,116.4,199.2,53.6C140.3,43,59.5,45.6-0.5,52.3V130h2000L2000,41.2z">
+                                        </path>
+                                        <path fill="#EDEEF0"
+                                            d="M1634.6,50.1c-193.8,11.9-366.9,24.9-569,50c-110.2,13.7-221.2,21.5-332.3,19.6c-187-3.3-344.5-29.7-560.9-69.8c-122.2-22.6-172.8-4-172.8-4V130h1998V46C1997.5,46,1831,38.1,1634.6,50.1z">
+                                        </path>
+                                    </svg>
+                                </div>
+                        
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block w-100" alt="Ministry of Investment, Industry and Trade"
+                                src="uploads/gallery/outside_general.jpg">
+
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12 order-md-1 order-2 text-center">
+                                            <p class="text-primary">""</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wave-svg max-1920 container sm-hide">
+                                    <svg width="2000" height="128" x="2000" y="128" viewBox="0 0 2000 128"
+                                        enable-background="new 0 0 2000 128" xml:space="preserve">
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M1999.5,22.2c-346-0.6-524.6-4.7-878.8,4.4c-286.6,7.4-442.3,54-608.1,51.2C307.3,74.3,202.5,5-0.5,28.1v100.4l2000-0.5V22.2z">
+                                        </path>
+                                        <path opacity="0.2" fill="#f7f7f7"
+                                            d="M-0.3,46.1C251,15.3,440.9,84.7,499.6,98.4c54.7,12.8,122.5,12,186.7-5.3c154.2-41.6,315.5-70.9,475.2-67.5s324.6,22.4,484.3,19.7c133-2.3,302.8,1.7,352.8,3.7c0,21.3,0,80,0,80H-0.5L-0.3,46.1z">
+                                        </path>
+                                        <path opacity="0.4" fill="#f7f7f7"
+                                            d="M2000,41.2c-139.8-12.7-219.9-10.8-360.2-11.2c-285.5-0.8-487.5,18-736.2,51.1C647,115.4,546.7,116.4,199.2,53.6C140.3,43,59.5,45.6-0.5,52.3V130h2000L2000,41.2z">
+                                        </path>
+                                        <path fill="#EDEEF0"
+                                            d="M1634.6,50.1c-193.8,11.9-366.9,24.9-569,50c-110.2,13.7-221.2,21.5-332.3,19.6c-187-3.3-344.5-29.7-560.9-69.8c-122.2-22.6-172.8-4-172.8-4V130h1998V46C1997.5,46,1831,38.1,1634.6,50.1z">
+                                        </path>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-fluid mb-3">
+                <div class="col-12 my-5 px-0">
+                    <h5 class="my-xs-2 text-center text-xs-center section-title mb-md-5">Our Core Activities </h5>
+                
+                    <div class="row core-home-section justify-content-center">
+                
+                        <div class="col-md-3 core-activity ">
+                            <a class="div-link" href=""
+                                style="background-image: url(uploads/services/ind_eng.jpg);">
+                                <div class="core-activity-inside">
+                                    <div class="category-text-wrap">
+                                        <h3>INDUSTRIAL ENGINEERING</h3>
+                                    </div>
+                                    <button class="btn p-2">
+                                        <p>Ensuring optimization of systems and processes</p>
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                
+                        <div class="col-md-3 core-activity ">
+                            <a class="div-link" href=""
+                                style="background-image: url(uploads/services/ind_rese.jpg);">
+                                <div class="core-activity-inside">
+                                    <div class="category-text-wrap">
+                                        <h3>TECHNOLOGY FORECASTING</h3>
+                                    </div>
+                                    <button class="btn p-2">
+                                        <p>Conducting technology to advance industrial processes</p>
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 core-activity ">
+                            <a class="div-link" href=""
+                                style="background-image: url(uploads/services/ind_rese.jpg);">
+                                <div class="core-activity-inside">
+                                    <div class="category-text-wrap">
+                                        <h3>INDUSTRIAL RESEARCH</h3>
+                                    </div>
+                                    <button class="btn p-2">
+                                        <p>Conducting research to advance industrial processes</p>
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                
+                        <div class="col-md-3 core-activity ">
+                            <div class="div-link" style="background-image: url(uploads/services/ict.jpg);">
+                                <div class="core-activity-inside">
+                                    <div class="category-text-wrap">
+                                        <h3>ICT & TECHNOLOGY TRANSFER</h3>
+                                    </div>
+                                    <button class="btn p-2">
+                                        <p>Enabling technology transfer and innovation</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                      <div class="card border-left-0">
+                        <div class="card-body">
+                          <div class="post-module d-flex align-items-start">
+                            <img class="bg-white mr-3" src="uploads/administration/1. Prof. Mkumbukwa M.A. Mtambo - Director General.jpg" alt="Prof. Mkumbukwa M.A. Mtambo">
+                            <div class="post-content">
+                              <h4 class="my-xs-2 text-center text-xs-center mb-md-1 d-none d-md-block" style="font-size: 24px; font-weight: bold;">Message from the Director General</h4>
+                              <p class="card-text fw-medium" style="font-size: 18px;">Prof. Mkumbukwa M. A.</p>
+                              <div class="card-body">
+                                <p class="card-text1" style="font-size: 16px;">
+                                  Dear visitor,</br>
+                                  It is my distinguished pleasure and honor to welcome you all to Tanzania Industrial Research and Development Organization. 
+                                  TIRDO is a national industrial research organization whose mandate is to undertake industrial research, provide technology services, and,
+                                  to disseminate research findings that will have an impact on socio-economic activities in the country.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <h4 class="my-xs-2 text-center text-xs-center mb-md-5 d-block d-md-none" style="font-size: 24px; font-weight: bold;">Message from the Director General</h4>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-6">
+                      <div class="card border-right-0">
+                        <div class="card-body">
+                          <div class="post-module">
+                            <div class="post-content">
+                              <h6 class="sub_title">
+                                <div class="notebox">
+                                  <div class="header" style="font-size: 24px;">Welcome to TIRDO</div>
+                                  <div class="content">
+                                    <p style="font-size: 18px;">
+                                      Tanzania Industrial Research and Development Organization (TIRDO) is a multi-disciplinary research and development organization established by an Act of Parliament No. 5 of 1979 and it became operational on 1st April 1979.
+                                    </p>
+                                    <p >
+                                      Its mandate is to assist the industrial sector of Tanzania by providing technical expertise and support services to upgrade their technology base. Additionally, TIRDO carries out applied research for the development of suitable technologies and value addition to indigenous resources through industrial processing.
+                                    </p>
+                                  </div>
+                                  <div class="more">
+                                    <a href="aboutus.html">Read more</a>
+                                  </div>
+                                </div>
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                                       
+                        
+                      
+            
+                  
+                  
+               <br>   
+
+                
+
+                <div class="row px-xs-3">
+                    <div class="col-md-8 my-3">
+                        <h5 class="my-xs-2 text-center text-xs-center section-title"> Tirdo Research Product </h5>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6 pb-3 mb-3">
+
+                                <img src="uploads/research product/research1.png"
+                                    class="w-100"
+                                    alt="INDUSTRIAL ENERGY EFFICIENCY PROGRAMME 2">
+                                <div class="col-12 bg-light px-xs-2 p-3">
+                                    <a
+                                        href="industrial_energy.html">
+                                        <p class="text-justify mb-2">
+                                            <h5>Industrial Energy Efficieny Programme 2</h5>
+                                            TIRDO is implementing a project for energy efficiency financed under EU/UNDP...
+                                        </p>
+
+                                        <div class="row">
+                                            <div class="col-md-8 col-xs-12">
+                                                <span class="badge p-0"> 14th Jun, 2023 </span>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 pb-3 mb-3">
+
+                                <img src="uploads/research product/research2.png"
+                                    class="w-100"
+                                    alt="INDUSTRIAL MAPPING">
+                                <div class="col-12 bg-light px-xs-2 p-3">
+                                    <a
+                                        href="industrial_mapping.html">
+                                        <p class="text-justify mb-2">
+                                            <h5>Industrial Mapping</h5>
+                                            The Ministry of Investment Industry and Trade in collabora- tion with Tanzania...
+                                        </p>
+
+                                        <div class="row">
+                                            <div class="col-md-8 col-xs-12">
+                                                <span class="badge p-0"> 12th Jun, 2023 </span>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 pb-3 mb-3">
+
+                                <img src="uploads/research product/research3.png"
+                                    class="w-100"
+                                    alt="ESSENTIAL OIL PRODUCTION">
+                                <div class="col-12 bg-light px-xs-2 p-3">
+                                    <a
+                                        href="oil_production.html">
+                                        <p class="text-justify mb-2">
+                                            <h5>Essential Oil Product</h5>
+                                            TIRDO has implemented a research project of value addition on orange peels that would have been wasted to produce essential oil (Orange Sweet Essential Oil)...
+                                        </p>
+
+                                        <div class="row">
+                                            <div class="col-md-8 col-xs-12">
+                                                <span class="badge p-0"> 09th Jun, 2023 </span>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 pb-3 mb-3">
+
+                                <img src="uploads/research product/research4.png"
+                                    class="w-100" alt="COAL BRIQUETTE PRODUCTION PLANT (USE OF COAL
+                                    DUST TO PRODUCE VALUE ADDED COAL DUST BRIQUETTES) ">
+                                <div class="col-12 bg-light px-xs-2 p-3">
+                                    <a
+                                        href="coal_briquette.html">
+                                        <p class="text-justify mb-2">
+                                           <h5>COAL BRIQUETTE PRODUCTION PLANT (USE OF COAL
+                                            DUST TO PRODUCE VALUE ADDED COAL DUST BRIQUETTES).
+                                            </h5>
+                                            TIRDO is implementing a project that uses a coal dust which would otherwise...
+                                        </p>
+
+                                        <div class="row">
+                                            <div class="col-md-8 col-xs-12">
+                                                <span class="badge p-0"> 07th Jun, 2023 </span>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12 justify-content-end d-flex">
+                            <a href=""> <i>View More</i> </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 my-3">
+
+                        <h5 class="my-xs-2 text-center text-xs-center section-title">Events/ Announcements </h5>
+
+                        <div class="row mt-4">
+                            <div class="col-md-12 pb-2 mb-2">
+                                <div class="col-12 bg-light px-xs-2 p-4">
+                                    <a href=""
+                                        target=&quot;_blank&quot;>
+                                        <p class="text-justify mb-2">
+                                            Supply, Delivery, Installation, Configuration and Commissioning of; ICT
+                                            Equipment, Camera and Accessories and Video Conference Facilities for the
+                                            Ministry of Investment, Industry and Trade Do
+                                        </p>
+
+                                        <div class="row">
+
+                                            <div class="col-md-10 col-xs-12">
+                                                <span class="badge p-0"> 14th Jun, 2023 </span>
+                                            </div>
+
+                                            <div class="col-md-1 sm-hide">
+                                                <i class="fas text-gray fa-bullhorn fa-flip-horizontal fa-2x"></i>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 justify-content-end d-flex">
+                            <a href=""> <i>View More</i> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-12 my-3">
+            <h5 class="my-xs-2 text-center text-xs-center section-title">Online Services in Industrial Sectors </h5>
+
+            <div class="row px-xs-2 online-services">
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">Company Registration</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://ors.brela.go.tz/ors/start?returnUrl=%2fbrela%2fprod%2fors" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">Business Registration</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://ors.brela.go.tz/ors/start?returnUrl=%2fbrela%2fprod%2fors" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">Trade Marks/Service Registration</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://ors.brela.go.tz/ors/start?returnUrl=%2fbrela%2fprod%2fors" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">TBS Online Application System</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://oas.tbs.go.tz/" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">Patents Registration</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://ors.brela.go.tz/ors/start?returnUrl=%2fbrela%2fprod%2fors" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">TBS  Portal</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://portal.tbs.go.tz/isqmt/tz/co/infowise/amis4t/web/home/home.jsf" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">TBS  Online Services</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://standards.tbs.go.tz/" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">Business Information</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://trade.business.go.tz/" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">TIC: Investment Procedures</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://procedures.tic.go.tz/" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">Beneficial Ownership</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://bo.brela.go.tz/" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">CTI: Confederation of Tanzania Industries</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://cti.co.tz/" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+                  <div class="service-item col-md-2">
+                    <div class="service-icon">
+                        <img src="https://www.mit.go.tz/site/images/online-service-icon.png" alt="">
+                    </div>
+                      <div class="service-title">eMrejesho</div>
+                      <div class="service-btn-wrapper">
+                            <a target="_blank" href="https://emrejesho.gov.go.tz/tenganisha_aina_za_walalamikaji?PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ&to_this_inst=415$PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ" class="serv-btn orange">Get The Service</a>
+                      </div>
+                  </div>
+                
+
+            </div>
+        </div>
+
+
+
+        <div class="container mb-5">
+            <div class="col-md-10 mt-5 mb-3">
+
+                <h5 class="my-xs-2 text-center text-xs-center section-title">Our Patners</h5>
+
+                <div class="row mt-4 slick-slide1">
+                    <a class="col-md-2 justify-content-center text-center" href=""
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic9.jpg"
+                            class="w-50" alt="UNITED REPUBLIC OF TANZANIA">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href="https://comsats.org/" target="_blank">
+                        <img src="uploads/patners/partners-pic1.jpg"
+                            class="w-50" alt="Commission on Science and Technology for Sustainable Development in the South(COMSATS)">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href="https://costechanalytical.com/"
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic2.jpg"
+                            class="w-50" alt="Costech Analytical Technologies">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href=""
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic4.jpg"
+                            class="w-50" alt="The Small and Medium Enterprise Competitive Facility">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href="https://tpsftz.org/"
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic7.jpg"
+                            class="w-50" alt="Tanzania Private Sector Foundation">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href="https://www.sirim.my/"
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic5.jpg"
+                            class="w-50" alt="Standards and Industrial Research Institute of Malaysia (SIRIM)">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href="https://www.tib.co.tz/"
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic6.jpg"
+                            class="w-50" alt="Tanzania Investment Bank (TIB)">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href="https://cti.co.tz/"
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic10.jpg"
+                            class="w-50" alt="Confederation of Tanzania Industries">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href="https://waitro.org/"
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic8.jpg"
+                            class="w-50" alt="World Association of Industrial and Technological Research Organizations (WAITRO)">
+                    </a>
+                    <a class="col-md-2 justify-content-center text-center" href="https://www.iaea.org/"
+                        target="_blank">
+                        <img src="uploads/patners/partners-pic3.jpg"
+                            class="w-50" alt="International Atomic Energy Agency (IAEA)">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- /contents -->
+
+    <!-- FOOTER -->
+    <footer class="tirdo-footer tirdo-section col-12 pb-0">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 px-3 no-padding-sm footer-content shadow-right">
+
+                <div class="col-12">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <p class="py-0">Tanzania Industrial Research and Development Organization</p>
+                    <p class="py-0">
+                        Kimweri Avenue,<br>
+                        Msasani TIRDO Complex,<br>
+                        P.O.BOX 23235.<br>
+                        Dar es Salaam, Tanzania.<br>
+                        +255-22-2666034 / 2668822<br></p>
+                    <p class="py-0">info@tirdo.or.tz</p>
+                </div>
+                <div class="col-12 px-3 pt-3">
+                    <!-- Boxicons -->
+                    <div class="footer-media">
+                        <a href="https://www.facebook.com/tirdotz" target="_blank"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAiJJREFUSEu1lk2IjVEYx///839vCAvZCMnGQpEsSclCSEIsRDYUk4VGU7KQjyYLRVj4KIvZqFnIFPlYkYWsZ2l8lGjYWFhMUfec59Gre2/3vvPed+Yy9yzP8/F7nuec5zmH6PNin/2jEuDu81JKB0juBLABwGoADuAzgHF3fyFpjGS9W6BdATHGXSTvNJxWJfrRzAZqtdrLMqVSQErpEoCLPZTPAJyVdL1oMw2QUroM4EIPzttVByXdat/oAMQY95B8UuH8h7sPSXpN8kuul1K6BmCoYWMhhK0k3zR9tADuvsjMPgBY1gUQQwjrSE60ywuAXDQRQljfPPgWIKU0AOBuRfSjkg435fV6fXsIYbO77yC5qd3O3fdlWfY432sBzOypu++uAJyXdCWXxxgPknxYoXtf0okOQEppEsDyCqMzkm426j4I4EaF7rikjUXALwDz5wjwU9KSImAKwMIC4LukqqxgZq/cfVvBbkrS4iLgPYA1BcVvklZU9URK6SuAlQWdd5LWFgEPABzpJYN8VpnZ75IARiQd6wDEGA+RHJ2LMyi9pu6emdknAKu6QGZ7i1rl6cigcb/zCfr8PwAeQthC8m3TR9mwy4fV6RLIbDIYltQxKKcB3J1mdg/A305sWzMBrko6Vwys6sE5SjLv1qUNo26ASXc/mWXZs7LSzvRkLjCz4yT3u/uYpNuNUXGK5F53fxRCGPmnJ7OquXqR9f1X8QfeMPUZ5L5y7QAAAABJRU5ErkJggg==" /></a>
+
+                        <a href="https://www.instagram.com/tirdo_official" target="_blank"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAndJREFUSEvFlT1oFEEUx/9v9s7M7GxECUGwsFEJEuMHiWW0slRSREGIjWWCghZiIYJYWAgSIVa2EWMhEiuxkZBGtIlBgiApAlamEfbe7l68nSeryWVvs5EccmS6mffxm/c1Q+jwog77x+4AkiQ57NL0FgHDAI4D215EAHwRYF553qTW+lsxI1siSJjHBZgEUG0zfb8ATBhrn+XtWgDMPKiAjwBUm8431BueyNCeIPi8cdACSJhfCzDShvMfDecGqkpdEmAqsyPglbZ2tBQQM68AOFQC+E7AQ3FuSTyvh0T6QHQHIivG2gFmHlLAp3W7ZWPtke0ANQC2AHino2iUenvDMAx7M1l3d/dqPQz7nVJvQcQQ2QfgwB87otD4/t4tABFRSRSlBeerul4/Gmvdr0TGBDhHgDhgDkTTROTBufmCTcNY22yQZg1EpJpE0VpLBxA90r5/O2J+SsB4oTumtLXXI+Y3BFzIyVJjbaUsgkoSRVmrbS6Ra2tpOrunUplbn4emTIBF39qTMfM9APdzVs5Y65UBKIkiV7jlRL3RmKlWKu8JONHCBhZ8a0/HzHcBPMjLjLXNzLS0acycTebmIpo2vn81qdWeCNGNFpHIpA6CmxHzLAEXc7LyGmQKWwCAUyKnUqWMAq5A5GwWohKZS4leKKW6SoqcGGtNO226koqMBEGwkI8gjuNhODcD4GAhdT99a/dvB8geq+aQ5AuXTagASwL0ENAH4HyhPf9uib4a3z9WDqjVXoLocqnhTg+JnhvfHysFMPMZBXz4n8dOiQx2BcFiKSA77OhzvUEtfDgD/8hO/sN5rLVeLuruzpe503ruRK/jEfwGoeUBKP13AggAAAAASUVORK5CYII=" /></a>
+
+
+                        <a href="https://www.twitter.com/tirdo_official" target="_blank"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhBJREFUSEvdlb1rFEEYxp9nT9ydD67SQlD8ABFBRcRKS0VQBD+QoAQstBBJryiKf4A2FhEbCUIamxSCkCKNiE1QULSwMhgQBbnK25lNTOaVhdxxudvbuz1Ikyln3vf5zTMz+yyxwYMbrI9NBhARQzItOzZpNOpLcfxIgPMg9wL4R3IyVuq+935HBFyIlZokKblO+4hEpJZ5/zUKYSy29ks/iHduDiKnCtYXAewS8prW+lVrvQ3w3u9BCAsA/gh5SWv9vlskTdNjEfCxxOEHkm9XQpi21n7qdpBkzv0FsGVN4EUAHhpjfrUEfbM5DnK6BJBCZEJZ+7LHQT7h0zTf9Yl1AiLvBHjNWm2eIkdF5GkJYEoZc6NzvfMOrHPuQATMAtg2yvdB8nGi9Z1CgHNuJ0V+AGgA2D4SAJhIjHnWz0GUOfcdwO5RxPOeaHX1YFyvfysE5JPOucsUyZ9Y66KrsBaUMfu6G3qiwjk3RpEHAA5XUSdwOzHm+UBAlqbnBHhTRRzAYqL1fpLLAwFrzzV/x9eHhKwIeVJrPV9UX5imIhItp+mhANwDebUEJBC5qayd6lfTA8gDL8uy4wjhLoCzJeKZkONa65kyp21A1myeDuQTAkc6Q7BP8yyi6JZSKg+40rHOQR7FWZJcEeAigTMAYgBLAH4D+AlgriYys9Xaz4OEC7No2KYqdZvsl1nF+rC1/wHPWrsZUsmliAAAAABJRU5ErkJggg==" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 px-0 px-xs-2">
+
+                <div class="footer-content container">
+                    <div class="row px-xs-2 px-3">
+                        <div class="col-md-12">
+                            <div class="row mx-2">
+
+                                <div class="col-lg-4 col-sm-6 no-padding-sm">
+                                    <h5 class="footer-heading">Related Links</h5>
+                                    <ul class="list-inline text-left">
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.ikulu.go.tz/" target="_blank">State House</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.vpo.go.tz/" target="_blank">Vice Presidents Office
+                                                (VPO)</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.pmo.go.tz/" target="_blank">Prime Ministers Office
+                                                (PMO)</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://business.go.tz/" target="_blank">Business Portal</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.tanzania.go.tz/" target="_blank">Tanzania Government
+                                                Portal</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="http://tic.go.tz/" target="_blank">Tanzania Investment Centre</a>
+                                        </li> <br>
+                                    </ul>
+                                </div>
+
+
+                                <div class="col-lg-4 no-padding-sm">
+                                    <h5 class="footer-heading">Quick Links</h5>
+                                    <ul class="list-inline text-left">
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://mail.tirdo.go.tz/login.php">Government Mailing System</a>
+                                        </li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://eoffice.gov.go.tz/users/login">e-Office Management
+                                                System</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                            href="https://emrejesho.gov.go.tz/tenganisha_aina_za_walalamikaji?PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ&to_this_inst=415$PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ">eMrejesho</a></li>
+                                    <br>
+                                    <li class="list-inline-item pr-1 py-2"><a
+                                        href="https://cti.co.tz/">Confederation Tanzania Industries</a></li>
+                                <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://safari.gov.go.tz/index.php/user/auth/login">e-Vibali
+                                                System</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://salaryslip.mof.go.tz/Account/Login?ReturnUrl=%2F">Salary
+                                                Slip Portal</a></li>
+                                        <br>
+                                    </ul>                            
+                                </div>
+
+
+                                <div class="col-lg-4 no-padding-sm">
+                                    <h5 class="footer-heading">Our Partners</h5>
+                                    <ul class="list-inline text-left">
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://comsats.org/">Commission on Science and Technology for Sustainable Development in the South (COMSATS)</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://costechanalytical.com/">Tanzania Commission for Science and Technology (COSTECH)</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a href="https://cti.co.tz/">Confederation of Tanzania Industries (CTI)</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a href="https://tpsftz.org/">Tanzania Private Sector Foundation (TPSF)</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://www.sirim.my/">Standards and Industrial Research Institute of Malaysia (SIRIM)</a>
+                                        </li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://www.tib.co.tz/">Tanzania Investment Bank (TIB)</a>
+                                        </li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://waitro.org/">World Association of Industrial and Technological Research Organizations (WAITRO)</a></li>
+                                        <br>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="footer-links">
+                                <div class="col-md-12 pl-0 list no-padding-sm text-xs-center footer-nav">
+                                    <li class='list-inline-item'><a
+                                            href=''>Privacy Policy</a></li>
+                                    </li>
+                                    <li class='list-inline-item'><a
+                                            href=''>Copyright Statement</a></li>
+                                    </li>
+                                    <li class='list-inline-item'><a href=''>Sitemap</a>
+                                    </li>
+                                    </li>
+                                    <li class='list-inline-item'><a href=''>Disclaimer</a></li>
+                                    </li>
+                                    <li class='list-inline-item'><a href=''>Contact
+                                            Us</a></li>
+                                    </li>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="credit">
+                    <div class="container">
+
+                        <div class="row  pr-3">
+                            <div class="col-md-8 text-left text-white-50 text-xs-center">
+                                Designed and Developed by
+                                <a href="https://www.tirdo.or.tz/index.php" target="_blank">TIRDO</a>
+                            </div>
+                            <div class="col-md-4 text-right text-white-50 text-xs-center">
+                                © 2023 TIRDO, All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+    </div>
+    <input type="hidden" id="base_url" value="https://www.tirdo.or.tz/index.php">
+
+    <script src="https://www.mit.go.tz/site/js/jquery.min.js"></script>
+    <script src="https://www.mit.go.tz/site/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.mit.go.tz/site/js/slick.min.js"></script>
+    <script src="https://www.mit.go.tz/site/js/datatables.min.js"></script>
+    <script src="https://www.mit.go.tz/site/js/magnific-popup.min.js"></script>
+    <script src="https://www.mit.go.tz/site/js/custom.min.js"></script>
+
+    <script src="https://www.mit.go.tz/admin/js/visitors-counter/client.min.js"></script>
+    <script src="https://www.mit.go.tz/admin/js/visitors-counter/visitors.logs.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="site/js/hideMore.js"></script>
+</body>
+
+</html>

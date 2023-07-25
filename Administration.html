@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="en">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#2d4a84">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#2d4a84">
+    
+        <title> TIRDO | Mission & vission
+        </title>
+    
+        <!-- favicons -->
+        <link rel="icon" href="site/images/pngegg.png" type="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    
+        <!-- Stylesheet  -->
+        <link rel="stylesheet" href="site/css/master.min.css">
+    
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+
+<body>
+  <div class="container max-1920 px-0">
+
+    <!-- HEADER -->
+    <header class="col-12 px-0" style="background-image: url('site/images/flag.png');">
+
+        <!-- top navbar -->
+        <div class="col-12 bg-white">
+            <div class="container px-0">
+                <div class="row top_nav px-0">
+                    <div class="col-5 sm-hide pl-0 pl-xs-2">
+                        <ul class="list-inline mx-auto float-left">
+                            <li class="list-inline-item sm-hide pr-2">
+                                <div class="search-form">
+                                    <form class="form-inline py-0 mr-auto" action=""
+                                        method="get">
+                                        <input class="form-control mr-sm-2" type="text" name="search"
+                                            placeholder="Search" aria-label="Search">
+                                        <button type="submit" class="search-icon" name="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcFJREFUSEu11curTmEUx/HPiQzkUpTLREgYuEXJAIUilKlLMSBFYUAZ+APIhIQwoJCUP+B0RgohE6RElBIZkEvkfm3VOnq9zt7vM9jvGu5n7fV91uW3nh5dtp4ux1cHmID1WIXZeZE76MVFPC+53ECAETiPNTUBfuMSNuNTHagdMBS3MANfcQpH8CSDTMZubMWQ9F2E71WQdsA5bMQzrMCDih9noQ/jcQh7SgAzcQ8/MB9R7zpbjCv4hkl4MZBzawZHsQPHsLOkgbiADdiHA50AjzEl63+/ELAEl3ENkdF/1prBR0STB+FXIWAUXuMNRncCvMdwDEPASix8P+AVxnQC3E1BzcPtkuhYgJtZpmWdAAexFyexvRBwFpsQA7KrE2AqHuJn4ZiGwK5m0Mqs24V2OuX/FMvxqCKTOSm0san2bSVCC5/WVfEFJ3A4lR3nkWWsii0YnEGjB6H6aHbtmPYfjkwBra7pwzvsxzrMTdUvRXz/x+rW9cRU6UrE7vmc03UDx/EWoYMQWqzzmMKYpNDEX2viwQnIdUxHbIOFeNlPaAIQsUJkMVHTsj9nmgZEvHFYm+9HoyWq1WRTJaqEdB3wBzsRVhkyGVX0AAAAAElFTkSuQmCC"/></button>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="list-inline-item sm-hide pr-2">
+                                <div class="footer-media">
+                                    <a href="https://www.facebook.com/tirdotz" target="_blank"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjVJREFUSEvdlU1IFHEYxn/vjLFGkZc6CEYW2miURARB4e5CIRRBH6QUQoc6RImwG1EURXvPnC0wuoQIXrp4CAIJwd0VL1LQF7a7QZIRRRJhIZS688YUbrkfoyt48X+c932f3zzvzDwjLPORZdZnhQEami6tefmkY8prbTV72teVlZs3FTkMbAZmgK5Kqbj2wfleucrQI8mY3QWoq/NvRc3NpvWl6rUoLcmE/aoYxPKHBxD2F6iPAxtV5VQ60flwrp4F1AVD1aoyBkxg6LHUYHQ4V6S+MbTLMeSZh8OnKsQV7X0biz6f56A6GCn36eQPoOyPgPDAyOiNN0PRT3OClj/UikivB2BKlLZkwu7Jc+BesAJh96735ggMieijjKMjhpg7Qe94ALpTcfvM//XsirYFL6x1ZLWljtMPrF/i93ErFbcvFwTUBNurTC17D3wFNiwFoNCWjtv3CgIgYliByXfApqWIuzMqRn06djtZBAB1/tBxFXFfsb8PurQzlorbW3JH8qLC8odbEK4DO0rSF86nYvb9BQFb/RcPiejjksRh3JyoqB0djUwvCHAb6gKhHkVOLxIyqw770kP2SKH+ImkaMazGb9vFMK4qnPQAuXlzNhW3u4v15AHcwJueyexWhyvAQQ/xn6LamkxE+7ycZgG1wfABQ+kAGuaFYOHpfnM2c250+K4bcJ5nngM3ik2feQKRo0AT4AN+AZ+BjwIDjiF96cHOFwsJz9VX2B9tsbZL6Vv2Ff0GpDGuGbbFsMYAAAAASUVORK5CYII=" /></a>
+                                
+                                    <a href="https://www.instagram.com/tirdo_official" target="_blank"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAodJREFUSEvFlT1oFEEUx/9v9+4kREQJIljYGG/VGD+4WMa9CJZKiigIsbGwSIg6CYqFSMRCMHC70VjZRoxFkFiJhcncIYg2MUjM5KMICIJpDIkgd3vzZNU79jZ7kkOOTLfzPn77f+/NDKHOi+qcH1sDaD59Y79Z9PoBtAM4AlT9EQbwCUDO4KL7OftwIVyRDQqStughwAUQr7F8BQb1zsvMk2BcBeBgx0CKtX4PwKgxecndY4Pa5iczH0sbFQDL7n8BcGcNyb95BbPVjHnniWjkdxxjXGWdrioAsQxgXwTgCwP3DeJZkNEEzRYDtwBaVjLTaqVFGxgf/sTxkpJuczXAOoDGEOA1vHiXevtgrbm9b7dvW8w9WjncIVqKGq8A/GBgJwF7/satKensiAAMGpa9WgwlXynEEwcS+UILE7oJbGuACZAEHtVkmsQ6F4rxlHTKA1LuQSp1Jb6+vTEfch5S0rlp2eIxgJ6K6WCMzGWdPssWLwGcDdiKSjqxDQrS6cHYV14thACXY3lMeAmWAPnnIbB4Rkn3WNIWdwi4GzBoJR0zqgdk2UJXpAB643mMeQlMAjgagk8r6Zyw0uI2GPeCNiWdcmVCYyr8kxlco0o6lyxbDAO4WimAXZV1hWVfnwDoXMAW3QPfwbI3ADQxjmtGAxFdBPEp389vsoZ+Bopti2jyTyWdhlrGdFkTdy5MudNBBUlbtBN4DKC9IdXflXR2RQKStlggoHxIgo0DeJzImNWam0BsEehMKHHpc05J51A1Bc8BXKgSuLltoqdqKtNdRcG1kwTj3f9cdtA6pXLDM5EAf7Ou13WJGnpwWv9Rm/KDUzRjmcU3Q0th3615MjfXzc151V3BL7dV9RkzbUS1AAAAAElFTkSuQmCC" /></a>
+                                                                
+                                    <a href="https://www.twitter.com/tirdo_official" target="_blank"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjVJREFUSEvdlU1IFHEYxn/vjLFGkZc6CEYW2miURARB4e5CIRRBH6QUQoc6RImwG1EURXvPnC0wuoQIXrp4CAIJwd0VL1LQF7a7QZIRRRJhIZS688YUbrkfoyt48X+c932f3zzvzDwjLPORZdZnhQEami6tefmkY8prbTV72teVlZs3FTkMbAZmgK5Kqbj2wfleucrQI8mY3QWoq/NvRc3NpvWl6rUoLcmE/aoYxPKHBxD2F6iPAxtV5VQ60flwrp4F1AVD1aoyBkxg6LHUYHQ4V6S+MbTLMeSZh8OnKsQV7X0biz6f56A6GCn36eQPoOyPgPDAyOiNN0PRT3OClj/UikivB2BKlLZkwu7Jc+BesAJh96735ggMieijjKMjhpg7Qe94ALpTcfvM//XsirYFL6x1ZLWljtMPrF/i93ErFbcvFwTUBNurTC17D3wFNiwFoNCWjtv3CgIgYliByXfApqWIuzMqRn06djtZBAB1/tBxFXFfsb8PurQzlorbW3JH8qLC8odbEK4DO0rSF86nYvb9BQFb/RcPiejjksRh3JyoqB0djUwvCHAb6gKhHkVOLxIyqw770kP2SKH+ImkaMazGb9vFMK4qnPQAuXlzNhW3u4v15AHcwJueyexWhyvAQQ/xn6LamkxE+7ycZgG1wfABQ+kAGuaFYOHpfnM2c250+K4bcJ5nngM3ik2feQKRo0AT4AN+AZ+BjwIDjiF96cHOFwsJz9VX2B9tsbZL6Vv2Ff0GpDGuGbbFsMYAAAAASUVORK5CYII=" /></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-7 sm-hide px-0">
+                        <ul class="list-inline mx-auto justify-content-end">
+                            <li class="list-inline-item">
+                                <a title="Switch Language to English" href="#">
+                                    <object data="site/images/Flag_of_the_United_Kingdom.svg"
+                                        type="image/svg+xml" width="20px"></object>
+                                    English
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a title="Switch Language to swahili" href="../sw/index.html">
+                                    <object data="site/images/Flag_of_Tanzania.svg"
+                                        type="image/svg+xml" width="18px"></object>
+                                    Kiswahili
+                                </a>
+                            </li>
+                            <li class='nav-item'><a class='nav-link' target='_black'
+                                    href=''>Staff Mail</a></li>
+                            </li>
+                            <li class='nav-item'><a class='nav-link' target='_black'
+                                    href=''>e-Office</a></li>
+                            </li>
+                            <li class='nav-item'><a class='nav-link' href=''>FAQs</a></li>
+                            </li>
+                            <li class='nav-item'><a class='nav-link' href='#'>msaada@tirdo.or.tz</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /top navbar -->
+
+        <!-- top middle -->
+        <div class="col-md-12 mt-0 top-middle">
+            <div class="container px-0">
+                <div class="row ">     
+                    <div class="col-md-2 col-sm-2 col-xs-2 float-left text-left pt-1 logo-container">
+                        <a href="#"><img src="https://www.ega.go.tz/site/images/emblem.png" alt="emblem"
+                                class="mx-auto img-fluid emblem"></a>
+                    </div>
+        
+                    <div class="col-md-8 col-sm-8 col-xs-8 text-center pt-3 pt-xs-0">
+                        <h2 class="mb-0 title title-main">TANZANIA INDUSTRIAL RESEARCH AND DEVELOPMENT ORGANIZATION</h2>
+                        <h6 class="title-desc pt-2"><b><i>TIRDO kwa maendeleo endelevu ya viwanda</i></b></h6>
+                    </div>
+        
+                    <div class="col-md-2 col-sm-2 col-xs-2 text-right pt-1 pr-0 logo-container"><img
+                            src="site/images/logo.jpg" alt="TIRDO Logo" class="img-fluid client-logo"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /top middle -->
+
+        <!-- top bottom -->
+        <div class="col-12 px-0">
+            <div class="col-md-12 col-xs-12 px-0 top-fixed top-bottom">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse"
+                        data-target="#middleNavbarMenu" aria-controls="middleNavbarMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse col-12 px-0" id="middleNavbarMenu">
+                        <ul class="navbar-nav mr-auto nav-bottom-header justify-content-center d-flex col-12">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">
+                                    <span class="mt-0 pt-0">Home</span>
+                                </a>
+                            </li>
+
+                            <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
+                                    data-toggle='dropdown'>About Us</a>
+                                <ul class='dropdown-menu'>
+                                    <li><a class='dropdown-item'
+                                            href='mission-vision.html'>Mission and Vision</a></li>
+                                    <li><a class='dropdown-item'
+                                            href='Administration.html'>Administration</a></li>
+                                    <li><a class='dropdown-item'
+                                            href='organization-structure.html'>Organization Structure</a>
+                                    </li>
+                                    <li><a class='dropdown-item'
+                                        href=''>Board of Directors</a>
+                                    </li> 
+                                    <li><a class='dropdown-item'
+                                            href='success-story.html'>Success story</a>
+                                    </li> 
+
+                                </ul>
+                            </li>
+                            <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
+                                data-toggle='dropdown'>Departments</a>
+                            <ul class='dropdown-menu'>
+                                <li class='nav-item dropdown-submenu'>
+                                    <a class='dropdown-item dropdown-toggle' data-toggle='dropdown'
+                                        href='industrial_chemistry.html'>Industry and Research </a>
+                                    <ul class='dropdown-menu'>
+                                        <li><a class='dropdown-item' href='environment.html'>Environment</a></li>
+                                        <li><a class='dropdown-item' href='food_biotechnology.html'>Food and
+                                                Biotechnology</a></li>
+                                        <li><a class='dropdown-item' href='industrial_chemistry.html'>Industrial
+                                                Chemistry</a></li>
+                                    </ul>
+                                </li>
+                                <li class='nav-item dropdown-submenu'>
+                                    <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>Engineering
+                                        Development</a>
+                                    <ul class='dropdown-menu'>
+                                        <li><a class='dropdown-item' href='energy.html'>Energy</a></li>
+                                        <li><a class='dropdown-item' href='material_science_tech.html'>Material Science &
+                                                Technology</a></li>
+                                        <li><a class='dropdown-item' href='textile_lather_chemistry.html'>Textile & Leather
+                                                Chemistry</a></li>
+                                    </ul>
+                                </li>
+                                <li class='nav-item dropdown-submenu'>
+                                    <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>ICT & Technolog
+                                        Development</a>
+                                    <ul class='dropdown-menu'>
+                                        <li><a class='dropdown-item' href='ict.html'>ICT</a></li>
+                                        <li><a class='dropdown-item' href=''>Instrumentation</a></li>
+                                        <li><a class='dropdown-item' href=''>Technology Transfer</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>>
+                            <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>COMSATS Center</a>
+                                <ul class='dropdown-menu'>
+                                    <li><a class='dropdown-item' href='background.html'>Background</a></li>
+                                    <li><a class='dropdown-item' href='centre_objectivies.html'>Center Objectives</a></li>
+                                    <li><a class='dropdown-item' href='centre_activities.html'>Center Activities</a></li>
+                                </ul>
+                            </li>
+                            <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>Services</a>
+                                <ul class='dropdown-menu'>
+                                    <li><a class='dropdown-item' href='research.html'>Research</a></li>
+                                    <li><a class='dropdown-item' href='consultacy_and_support.html'>Consultancy & Technical Services</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- /top bottom -->
+        <!-- </div> -->
+    </header>
+  
+    <!-- /HEADER -->
+
+    <!-- contents -->
+    <div class="container mb-3">
+
+        <div class="row">
+            <div class="col-12 px-xs-0">
+                <nav aria-label="breadcrumb" class="mb-0">
+                    <ol class="breadcrumb px-0">
+                                                    <li class="breadcrumb-item "><a href="https://www.tirdo.or.tz"><span class="fas fa-home"></span></a></li>
+                      <li class="breadcrumb-item list-inline-item font-weight-bold">ABOUT TIRDO</li><li class="breadcrumb-item list-inline-item active">ADMINISTRATION/UTAWALA</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+  
+          
+        <!-- <div class="row mt-4 justify-content-center" style="margin-left: -12%;  margin-right: -12%;"> -->
+        <div class="row mt-4 justify-content-center">
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/1. Prof. Mkumbukwa M.A. Mtambo - Director General.jpg" alt="Prof. Mkumbukwa M.A. Mtambo">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">DIRECTOR GENERAL</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Prof. Mkumbukwa M. A.</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/2. Emilian Bundala - Director of Human Resorce and Admin.png"
+                        alt="Emilian Bundala">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">DIRECTOR OF
+                            HUMAN RESOURCE AND ADMINISTRATION</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Emilian Bundala</p>
+                            </a>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/3. mosoud.png"
+                        alt="Dr. Masoud M. Masoud">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">DIRECTOR OF ICT AND TECHNOLOGY TRANSFER</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Dr. Masoud M. Masoud</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mb-3">
+  
+          
+        <!-- <div class="row mt-4 justify-content-center" style="margin-left: -12%;  margin-right: -12%;"> -->
+        <div class="row mt-4 justify-content-center">
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white"  src="uploads/administration/4. Eng. Ramson Mwilangali - Director of Engineering Development (DED).jpg"
+                        alt="Eng. Ramson Mwilangali">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">DIRECTOR OF ENGINEERING DEVELOPMENT (DED)</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Eng. Ramson Mwilangali</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/5. Humphrey Ndosi - Ag. Director of Industrial Research.jpg"
+                        alt="Humphrey Ndosi - Ag">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">AG. DIRECTOR OF
+                            INDUSTRIAL RESEARCH</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Humphrey Ndosi</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/6. Mr. David J. Kisiwa - Director of Finance.png"
+                        alt="Mr. DAVID J. KISIWA">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">DIRECTOR
+                            OF
+                            FINANCE</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Mr. David J. Kisiwa</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mb-3">
+  
+          
+        <!-- <div class="row mt-4 justify-content-center" style="margin-left: -12%;  margin-right: -12%;"> -->
+        <div class="row mt-4 justify-content-center">
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/Anne Rehani - Head Internal Audit.png"
+                        alt="Anne Rehani">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">HEAD OF INTERNAL AUDIT</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Anne Rehani</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/Augustino Mwenda - Investment Manager.png"
+                        alt="Augustino Mwenda">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">INVESTMENT MANAGER</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Augustino Mwenda</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/Elangwa Mcharo - SHRO.jpg"
+                        alt="Elangwa Mcharo">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">SHRO</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Elangwa Mcharo</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mb-3">
+  
+          
+        <!-- <div class="row mt-4 justify-content-center" style="margin-left: -12%;  margin-right: -12%;"> -->
+        <div class="row mt-4 justify-content-center">
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/Jacqueline Mwendwa HoD Chemistry.jpg"
+                        alt="Jacqueline Mwendwa">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">HEAD OF CHEMISTRY DEPARTMENT<</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Jacqueline Mwendwa</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+          
+            <div class="col-6 col-sm mb-3">
+                <!-- Post-->
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/Kunda Sikazwe - HoD Environment.jpg"
+                        alt="Kunda Sikazwe">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">HEAD OF ENVIRONMENT DEPARTMENT</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Kunda Sikazwe</p>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-6 col-sm mb-3">
+                <!-- Post
+                    ON THIS SECTION ONE CAN ADD AN ADMINISTARTOR IF ONE EVER COMES
+                        YOU JUST HAVE TO COPY THE THIS SECTION DIV OF CLASS 
+                        'COL-6 COL-SM MB-3'
+                <div class="post-module">
+
+                    <div class="thumbnail">
+                        <img class="w-100 bg-white" src="uploads/administration/Kunda Sikazwe - HoD Environment.jpg"
+                        alt="Kunda Sikazwe">
+                    </div>
+
+                    <div class="post-content">
+                        <div class="category">HEAD OF ENVIRONMENT DEPARTMENT</div>
+                        <h6 class="sub_title">
+                            <p class="card-text fw-medium">Kunda Sikazwe</p>
+                        </h6>
+                    </div>
+
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+    <!-- /contents -->
+
+    <!-- FOOTER -->
+    <footer class="tirdo-footer tirdo-section col-12 pb-0">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 px-3 no-padding-sm footer-content shadow-right">
+    
+                <div class="col-12">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <p class="py-0">Tanzania Industrial Research and Development Organization</p>
+                    <p class="py-0">
+                        Kimweri Avenue,<br>
+                        Msasani TIRDO Complex,<br>
+                        P.O.BOX 23235.<br>
+                        Dar es Salaam, Tanzania.<br>
+                        +255-22-2666034 / 2668822<br></p>
+                    <p class="py-0">info@tirdo.go.tz</p>
+                    <p class="py-0">Fax
+                        <a href="fax:0" class="text-white">000000</a>
+                    </p>
+                </div>
+                <div class="col-12 px-3 pt-3">
+                    <!-- Boxicons -->
+                    <div class="footer-media">
+                        <a href="https://www.facebook.com/tirdotz" target="_blank"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAiJJREFUSEu1lk2IjVEYx///839vCAvZCMnGQpEsSclCSEIsRDYUk4VGU7KQjyYLRVj4KIvZqFnIFPlYkYWsZ2l8lGjYWFhMUfec59Gre2/3vvPed+Yy9yzP8/F7nuec5zmH6PNin/2jEuDu81JKB0juBLABwGoADuAzgHF3fyFpjGS9W6BdATHGXSTvNJxWJfrRzAZqtdrLMqVSQErpEoCLPZTPAJyVdL1oMw2QUroM4EIPzttVByXdat/oAMQY95B8UuH8h7sPSXpN8kuul1K6BmCoYWMhhK0k3zR9tADuvsjMPgBY1gUQQwjrSE60ywuAXDQRQljfPPgWIKU0AOBuRfSjkg435fV6fXsIYbO77yC5qd3O3fdlWfY432sBzOypu++uAJyXdCWXxxgPknxYoXtf0okOQEppEsDyCqMzkm426j4I4EaF7rikjUXALwDz5wjwU9KSImAKwMIC4LukqqxgZq/cfVvBbkrS4iLgPYA1BcVvklZU9URK6SuAlQWdd5LWFgEPABzpJYN8VpnZ75IARiQd6wDEGA+RHJ2LMyi9pu6emdknAKu6QGZ7i1rl6cigcb/zCfr8PwAeQthC8m3TR9mwy4fV6RLIbDIYltQxKKcB3J1mdg/A305sWzMBrko6Vwys6sE5SjLv1qUNo26ASXc/mWXZs7LSzvRkLjCz4yT3u/uYpNuNUXGK5F53fxRCGPmnJ7OquXqR9f1X8QfeMPUZ5L5y7QAAAABJRU5ErkJggg==" /></a>
+    
+                        <a href="https://www.instagram.com/tirdo_official" target="_blank"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAndJREFUSEvFlT1oFEEUx/9v9s7M7GxECUGwsFEJEuMHiWW0slRSREGIjWWCghZiIYJYWAgSIVa2EWMhEiuxkZBGtIlBgiApAlamEfbe7l68nSeryWVvs5EccmS6mffxm/c1Q+jwog77x+4AkiQ57NL0FgHDAI4D215EAHwRYF553qTW+lsxI1siSJjHBZgEUG0zfb8ATBhrn+XtWgDMPKiAjwBUm8431BueyNCeIPi8cdACSJhfCzDShvMfDecGqkpdEmAqsyPglbZ2tBQQM68AOFQC+E7AQ3FuSTyvh0T6QHQHIivG2gFmHlLAp3W7ZWPtke0ANQC2AHino2iUenvDMAx7M1l3d/dqPQz7nVJvQcQQ2QfgwB87otD4/t4tABFRSRSlBeerul4/Gmvdr0TGBDhHgDhgDkTTROTBufmCTcNY22yQZg1EpJpE0VpLBxA90r5/O2J+SsB4oTumtLXXI+Y3BFzIyVJjbaUsgkoSRVmrbS6Ra2tpOrunUplbn4emTIBF39qTMfM9APdzVs5Y65UBKIkiV7jlRL3RmKlWKu8JONHCBhZ8a0/HzHcBPMjLjLXNzLS0acycTebmIpo2vn81qdWeCNGNFpHIpA6CmxHzLAEXc7LyGmQKWwCAUyKnUqWMAq5A5GwWohKZS4leKKW6SoqcGGtNO226koqMBEGwkI8gjuNhODcD4GAhdT99a/dvB8geq+aQ5AuXTagASwL0ENAH4HyhPf9uib4a3z9WDqjVXoLocqnhTg+JnhvfHysFMPMZBXz4n8dOiQx2BcFiKSA77OhzvUEtfDgD/8hO/sN5rLVeLuruzpe503ruRK/jEfwGoeUBKP13AggAAAAASUVORK5CYII=" /></a>
+    
+    
+                        <a href="https://www.twitter.com/tirdo_official" target="_blank"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhBJREFUSEvdlb1rFEEYxp9nT9ydD67SQlD8ABFBRcRKS0VQBD+QoAQstBBJryiKf4A2FhEbCUIamxSCkCKNiE1QULSwMhgQBbnK25lNTOaVhdxxudvbuz1Ikyln3vf5zTMz+yyxwYMbrI9NBhARQzItOzZpNOpLcfxIgPMg9wL4R3IyVuq+935HBFyIlZokKblO+4hEpJZ5/zUKYSy29ks/iHduDiKnCtYXAewS8prW+lVrvQ3w3u9BCAsA/gh5SWv9vlskTdNjEfCxxOEHkm9XQpi21n7qdpBkzv0FsGVN4EUAHhpjfrUEfbM5DnK6BJBCZEJZ+7LHQT7h0zTf9Yl1AiLvBHjNWm2eIkdF5GkJYEoZc6NzvfMOrHPuQATMAtg2yvdB8nGi9Z1CgHNuJ0V+AGgA2D4SAJhIjHnWz0GUOfcdwO5RxPOeaHX1YFyvfysE5JPOucsUyZ9Y66KrsBaUMfu6G3qiwjk3RpEHAA5XUSdwOzHm+UBAlqbnBHhTRRzAYqL1fpLLAwFrzzV/x9eHhKwIeVJrPV9UX5imIhItp+mhANwDebUEJBC5qayd6lfTA8gDL8uy4wjhLoCzJeKZkONa65kyp21A1myeDuQTAkc6Q7BP8yyi6JZSKg+40rHOQR7FWZJcEeAigTMAYgBLAH4D+AlgriYys9Xaz4OEC7No2KYqdZvsl1nF+rC1/wHPWrsZUsmliAAAAABJRU5ErkJggg==" /></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-9 px-0 px-xs-2">
+    
+                <div class="footer-content container">
+                    <div class="row px-xs-2 px-3">
+                        <div class="col-md-12">
+                            <div class="row mx-2">
+    
+                                <div class="col-lg-4 col-sm-6 no-padding-sm">
+                                    <h5 class="footer-heading">Related Links</h5>
+                                    <ul class="list-inline text-left">
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.ikulu.go.tz/" target="_blank">State House</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.vpo.go.tz/" target="_blank">Vice Presidents Office
+                                                (VPO)</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.pmo.go.tz/" target="_blank">Prime Ministers Office
+                                                (PMO)</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://business.go.tz/" target="_blank">Business Portal</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.tanzania.go.tz/" target="_blank">Tanzania Government
+                                                Portal</a>
+                                        </li> <br>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="http://tic.go.tz/" target="_blank">Tanzania Investment Centre</a>
+                                        </li> <br>
+                                    </ul>
+                                </div>
+    
+    
+                                <div class="col-lg-4 no-padding-sm">
+                                    <h5 class="footer-heading">Quick Links</h5>
+                                    <ul class="list-inline text-left">
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://mail.tirdo.go.tz/login.php">Government Mailing System</a>
+                                        </li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://eoffice.gov.go.tz/users/login">e-Office Management
+                                                System</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://safari.gov.go.tz/index.php/user/auth/login">e-Vibali
+                                                System</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://salaryslip.mof.go.tz/Account/Login?ReturnUrl=%2F">Salary
+                                                Slip Portal</a></li>
+                                        <br>
+                                    </ul>
+                                </div>
+    
+    
+                                <div class="col-lg-4 no-padding-sm">
+                                    <h5 class="footer-heading">Our Partners</h5>
+                                    <ul class="list-inline text-left">
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://www.tz.undp.org/content/tanzania/en/home.html">United
+                                                Nation Development Programmes (UNDP)</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a href="https://www.fsdt.or.tz/">Financial
+                                                Sector Deepening Trust
+                                                (FSDT)</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a href="https://tpsftz.org/">Tanzania
+                                                Private Sector Foundation (TPSF)</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a href="https://www.sadc.int/">Southern
+                                                African Development Community (SADC)</a></li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://www.intracen.org/">International Trade Center (ITC)</a>
+                                        </li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://www.trademarkea.com/">TradeMark East Africa (TMEA)</a>
+                                        </li>
+                                        <br>
+                                        <li class="list-inline-item pr-1 py-2"><a
+                                                href="https://www.jica.go.jp/english/index.html">Japan International
+                                                Cooperation Agency</a></li>
+                                        <br>
+                                    </ul>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-12">
+                            <div class="footer-links">
+                                <div class="col-md-12 pl-0 list no-padding-sm text-xs-center footer-nav">
+                                    <li class='list-inline-item'><a href=''>Privacy Policy</a></li>
+                                    </li>
+                                    <li class='list-inline-item'><a href=''>Copyright Statement</a></li>
+                                    </li>
+                                    <li class='list-inline-item'><a href=''>Sitemap</a>
+                                    </li>
+                                    </li>
+                                    <li class='list-inline-item'><a href=''>Disclaimer</a></li>
+                                    </li>
+                                    <li class='list-inline-item'><a href=''>Contact
+                                            Us</a></li>
+                                    </li>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="credit">
+                    <div class="container">
+    
+                        <div class="row  pr-3">
+                            <div class="col-md-8 text-left text-white-50 text-xs-center">
+                                Designed and Developed by
+                                <a href="https://www.tirdo.or.tz/index.php" target="_blank">TIRDO</a>
+                            </div>
+                            <div class="col-md-4 text-right text-white-50 text-xs-center">
+                                © 2023 TIRDO, All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- /FOOTER -->
+  <input type="hidden" id="base_url" value="https://www.mit.go.tz">
+
+   <script src="https://www.mit.go.tz/site/js/jquery.min.js"></script>
+   <script src="https://www.mit.go.tz/site/js/bootstrap.bundle.min.js"></script>
+   <script src="https://www.mit.go.tz/site/js/slick.min.js"></script>
+   <script src="https://www.mit.go.tz/site/js/datatables.min.js"></script>
+   <script src="https://www.mit.go.tz/site/js/magnific-popup.min.js"></script>
+   <script src="https://www.mit.go.tz/site/js/custom.min.js"></script>
+
+   <script src="https://www.mit.go.tz/admin/js/visitors-counter/client.min.js"></script>
+   <script src="https://www.mit.go.tz/admin/js/visitors-counter/visitors.logs.js"></script>
+
+  
+</body>
+
+</html>

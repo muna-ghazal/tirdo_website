@@ -35,4 +35,32 @@ header .top-middle .client-logo {
   .title-container {
     margin-top: 10px; /* To add some space between the image and the title */
   }
-  
+.message-director {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    background-color: rgba(218, 162, 9, 0.938); 
+    color: white; 
+    padding: 4px 10px; 
+    font-size: 15px; 
+    font-weight: bold; 
+    width: 100%; 
+    margin: 0;
+    text-align: center;
+}
+.title-font {
+    font-size: 20px;
+}
+@media (max-width:576px) {
+    .message-director {
+        padding: 2px 5px; 
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .message-director {
+        font-size: 15px;
+    }
+}
